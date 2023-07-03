@@ -1,0 +1,7 @@
+Spring Security 6 (Signup + Login + Hello API)
+
+Angular Authentication (Signup + Login + Hello API)
+
+Angular Material UI
+
+English
