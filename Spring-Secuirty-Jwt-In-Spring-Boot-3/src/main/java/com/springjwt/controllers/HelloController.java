@@ -1,5 +1,6 @@
 package com.springjwt.controllers;
 
+import com.springjwt.dto.HelloResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/hello")
-    public String hello() {
-        return "Hello from JWT Authorization";
+    public HelloResponse hello() {
+        return new HelloResponse("Hello from JWT Authorization");
     }
 
 }

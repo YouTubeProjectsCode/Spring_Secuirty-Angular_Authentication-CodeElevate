@@ -1,0 +1,8 @@
+<form [formGroup]="signupForm">
+    <input type="text" name="name" id="name" placeholder="Enter your name" formControlName="name" />
+    <input type="email" name="email" id="email" placeholder="Enter your email" formControlName="email" />
+    <input type="password" name="password" id="password" placeholder="Enter your password" formControlName="password" />
+    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter your confirm password"
+        formControlName="confirmPassword" />
+    <button type="button" [disabled]="signupForm.invalid" (click)="signup()">Signup</button>
+</form>
